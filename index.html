@@ -11,6 +11,20 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: { sans: ['Montserrat', 'Arial', 'sans-serif'] },
+            colors: {
+              'mysogi-pink': '#f7cac4',
+              'mysogi-light': '#f4f5f8',
+            },
+          },
+        },
+      }
+    </script>
     <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body class="font-sans text-base text-[#3b4863] antialiased">

@@ -1,76 +1,181 @@
-@import 'tailwindcss';
-
-@source '../index.html';
-
-@theme {
-  --font-sans: Montserrat, Arial, sans-serif;
-  --color-mysogi-pink: #f7cac4;
-  --color-mysogi-light: #f4f5f8;
+/* Custom Mysogi styles */
+.btn-mysogi {
+  display: inline-block;
+  padding: 14px 32px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  background: linear-gradient(to bottom, #ff6600, #ff1f00);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s;
 }
 
-@layer components {
-  .btn-mysogi {
-    @apply inline-block rounded-[10px] bg-gradient-to-b from-[#ff6600] to-[#ff1f00] px-8 py-3.5 text-base font-bold text-white no-underline shadow-md transition duration-300 hover:opacity-90 hover:shadow-lg;
-  }
+.btn-mysogi:hover {
+  opacity: 0.9;
+}
 
-  .btn-mysogi-lg {
-    @apply inline-block rounded-[10px] bg-gradient-to-b from-[#ff6600] to-[#ff1f00] px-10 py-4 text-lg font-bold text-white no-underline shadow-lg transition duration-300 hover:opacity-90 hover:shadow-xl;
-  }
+.btn-mysogi-lg {
+  display: inline-block;
+  padding: 16px 40px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  background: linear-gradient(to bottom, #ff6600, #ff1f00);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s;
+}
 
-  .btn-whatsapp {
-    @apply inline-block rounded-[10px] bg-[#25d366] px-10 py-4 text-base font-bold text-white no-underline shadow-md transition duration-300 hover:bg-[#1da851] hover:shadow-lg;
-  }
+.btn-mysogi-lg:hover {
+  opacity: 0.9;
+}
 
-  .btn-call {
-    @apply inline-block rounded-[10px] bg-white px-10 py-4 text-base font-bold text-[#3b4863] no-underline shadow-md transition duration-300 hover:bg-mysogi-pink hover:shadow-lg;
-  }
+.btn-whatsapp {
+  display: inline-block;
+  padding: 16px 40px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  background: #25d366;
+  transition: background 0.3s;
+}
 
-  .mysogi-line {
-    @apply mx-auto mt-2 block h-[3px] w-[105px] rounded-full bg-[#ff1f00];
-  }
+.btn-whatsapp:hover {
+  background: #1da851;
+}
 
-  .hero-badge {
-    @apply flex items-center gap-2;
-  }
+.btn-call {
+  display: inline-block;
+  padding: 16px 40px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #3b4863;
+  text-decoration: none;
+  border-radius: 10px;
+  background: #fff;
+  transition: background 0.3s;
+}
 
-  .hero-dot {
-    @apply h-2 w-2 rounded-full bg-[#ff1f00];
-  }
+.btn-call:hover {
+  background: #f7cac4;
+}
 
-  .hero-image {
-    @apply drop-shadow-2xl transition duration-500 hover:scale-[1.02];
-  }
+.mysogi-line {
+  display: block;
+  width: 105px;
+  height: 3px;
+  margin: 8px auto 0;
+  border-radius: 999px;
+  background: #ff1f00;
+}
 
-  .service-card {
-    @apply rounded-xl border border-slate-100 bg-mysogi-light p-5 text-center shadow-sm transition duration-300 hover:-translate-y-1 hover:border-[#ff1f00]/20 hover:shadow-md;
-  }
+.hero-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
 
-  .form-card {
-    @apply overflow-hidden rounded-2xl bg-white shadow-xl transition duration-300 hover:shadow-2xl;
-  }
+.hero-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ff1f00;
+}
 
-  .form-card-header {
-    @apply bg-gradient-to-r from-[#ff6600] to-[#ff1f00] px-8 py-8 text-center;
-  }
+.hero-image {
+  filter: drop-shadow(0 25px 25px rgba(0, 0, 0, 0.15));
+  transition: transform 0.5s;
+}
 
-  .form-input {
-    @apply w-full rounded-[10px] border border-slate-300 px-4 py-3 text-base text-[#3b4863] transition duration-200 focus:border-[#ff1f00] focus:outline-none focus:ring-2 focus:ring-[#ff1f00]/20;
-  }
+.hero-image:hover {
+  transform: scale(1.02);
+}
 
-  .cta-card {
-    @apply rounded-2xl bg-white px-8 py-12 shadow-lg transition duration-300 hover:shadow-xl lg:px-14;
-  }
+.service-card {
+  padding: 20px;
+  text-align: center;
+  border-radius: 12px;
+  border: 1px solid #f1f5f9;
+  background: #f4f5f8;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
 
-  .site-footer {
-    @apply border-t border-slate-200 bg-[#fafbfc] py-12 text-sm text-[#637388];
-  }
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
 
-  .footer-links {
-    @apply list-none space-y-2 p-0;
-  }
+.form-card {
+  overflow: hidden;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+}
 
-  .footer-links a,
-  .footer-link {
-    @apply text-[#637388] no-underline transition duration-200 hover:text-[#ff1f00];
-  }
+.form-card-header {
+  padding: 32px;
+  text-align: center;
+  background: linear-gradient(to right, #ff6600, #ff1f00);
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  color: #3b4863;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #ff1f00;
+  box-shadow: 0 0 0 2px rgba(255, 31, 0, 0.2);
+}
+
+.cta-card {
+  padding: 48px 32px;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.site-footer {
+  padding: 48px 0;
+  font-size: 14px;
+  color: #637388;
+  background: #fafbfc;
+  border-top: 1px solid #e2e8f0;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a,
+.footer-link {
+  color: #637388;
+  text-decoration: none;
+}
+
+.footer-links a:hover,
+.footer-link:hover {
+  color: #ff1f00;
+}
+
+body {
+  margin: 0;
+  font-family: Montserrat, Arial, sans-serif;
 }
