@@ -1,0 +1,27 @@
+@import 'tailwindcss';
+
+@source '../index.html';
+
+@theme {
+  --font-sans: Montserrat, Arial, sans-serif;
+  --color-mysogi-pink: #f7cac4;
+  --color-mysogi-red: #ff1f00;
+  --color-mysogi-orange: #ff6600;
+  --color-mysogi-dark: #3b4863;
+  --color-mysogi-gray: #7987a1;
+  --color-mysogi-light: #f4f5f8;
+}
+
+@layer components {
+  .btn-mysogi {
+    @apply inline-block rounded-[10px] bg-gradient-to-b from-[#ff6600] to-[#ff1f00] px-8 py-3.5 text-base font-bold text-white no-underline shadow-md transition hover:opacity-90;
+  }
+
+  .btn-mysogi-lg {
+    @apply inline-block rounded-[10px] bg-gradient-to-b from-[#ff6600] to-[#ff1f00] px-10 py-4 text-lg font-bold text-white no-underline shadow-lg transition hover:opacity-90;
+  }
+
+  .mysogi-line {
+    @apply mx-auto mt-2 block h-[3px] w-[105px] rounded-full bg-[#ff1f00];
+  }
+}
