@@ -1,9 +1,11 @@
 import './style.css'
 
-const form = document.getElementById('lead-form') as HTMLFormElement
+const form = document.getElementById('lead-form')
 
-form.addEventListener('submit', function (e) {
-  e.preventDefault()
-  alert('Thank you! Your request was sent. We will contact you soon.')
-  form.reset()
-})
+if (form) {
+  form.addEventListener('submit', (e) => {
+    e.preventDefault()
+    alert('Thank you! We will contact you soon.')
+    ;(form as HTMLFormElement).reset()
+  })
+}
