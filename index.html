@@ -8,21 +8,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
   </head>
-  <body class="font-sans text-base text-[#3b4863]">
-    <header class="sticky top-0 z-50 border-b border-slate-200 bg-white">
-      <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <a href="https://mysogi.com.ng">
+  <body class="font-sans text-base text-[#3b4863] antialiased">
+    <header class="sticky top-0 z-50 border-b border-slate-100 bg-white shadow-sm">
+      <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-3">
+        <a href="https://mysogi.com.ng" class="shrink-0">
           <img
             src="https://res.cloudinary.com/mysogi/image/upload/v1687130798/website/logo_pwxnvp.svg"
             alt="Mysogi"
-            class="h-9"
+            class="h-9 w-auto"
           />
         </a>
-        <nav class="hidden gap-6 text-sm font-semibold md:flex">
+        <nav class="hidden items-center gap-8 text-sm font-semibold md:flex">
+          <a href="https://mysogi.com.ng" class="text-[#7987a1] no-underline hover:text-[#ff1f00]">Home</a>
           <a href="#form" class="text-[#7987a1] no-underline hover:text-[#ff1f00]">Get Rates</a>
           <a href="#whatsapp" class="text-[#7987a1] no-underline hover:text-[#ff1f00]">WhatsApp</a>
           <a href="#call" class="text-[#7987a1] no-underline hover:text-[#ff1f00]">Call</a>
@@ -35,67 +36,111 @@
 
     <main>
       <section class="bg-mysogi-pink py-14 lg:py-20">
-        <div class="mx-auto grid max-w-6xl items-center gap-10 px-6 lg:grid-cols-2">
+        <div class="mx-auto grid max-w-6xl items-center gap-12 px-6 lg:grid-cols-2">
           <div>
-            <p class="text-2xl font-bold text-black">
+            <p class="text-2xl font-bold text-black lg:text-[32px]">
               Advertise. Connect. Convert.
               <span class="mysogi-line"></span>
             </p>
-            <h1 class="mt-5 text-3xl font-bold leading-tight text-black lg:text-[44px]">
+            <h1 class="mt-6 text-[36px] font-bold leading-tight text-black lg:text-[44px] lg:leading-[52px]">
               Affordable Nationwide Billboard Advertising, OOH Media &amp; Digital Marketing Services.
             </h1>
-            <p class="mt-4 text-base leading-relaxed text-black/80 lg:text-lg">
+            <p class="mt-5 text-base font-medium leading-relaxed text-black/80 lg:text-lg">
               Drive brand awareness, lead generation, and business growth with high-impact billboard advertising, paid
               search advertising, social media ads (Instagram, Facebook, Snapchat), SMS, Voice ads, radio ads, and tv ads
               across Nigeria.
             </p>
-            <a href="#form" class="btn-mysogi-lg mt-8 inline-block">
-              Start Your Billboard or Digital Advertising Campaign Today
-            </a>
+            <div class="mt-8">
+              <a href="#form" class="btn-mysogi-lg">
+                Start Your Billboard or Digital Advertising Campaign Today
+              </a>
+            </div>
+            <div class="mt-10 flex flex-wrap gap-6 text-sm font-semibold text-[#3b4863]">
+              <span class="hero-badge">
+                <span class="hero-dot"></span>
+                Nationwide reach
+              </span>
+              <span class="hero-badge">
+                <span class="hero-dot"></span>
+                From ₦30k/day
+              </span>
+              <span class="hero-badge">
+                <span class="hero-dot"></span>
+                No contracts
+              </span>
+            </div>
           </div>
           <div class="flex justify-center">
-            <img src="/billboard.png" alt="Billboard advertising" class="max-h-[400px] w-full max-w-lg object-contain" />
+            <img
+              src="/billboard.png"
+              alt="Billboard advertising"
+              class="hero-image max-h-[400px] w-full max-w-lg object-contain"
+            />
           </div>
         </div>
       </section>
 
-      <section id="form" class="bg-mysogi-light py-16">
-        <div class="mx-auto max-w-lg px-6">
-          <div class="rounded-2xl bg-white shadow-lg">
-            <div class="rounded-t-2xl bg-gradient-to-r from-[#ff6600] to-[#ff1f00] px-6 py-6 text-center">
-              <h2 class="text-2xl font-bold text-white">
+      <section class="border-y border-slate-200 bg-white py-10">
+        <div class="mx-auto grid max-w-6xl gap-6 px-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="service-card">
+            <p class="text-lg font-bold text-[#ff1f00]">Billboard</p>
+            <p class="mt-1 text-sm text-[#7987a1]">LED &amp; outdoor placements</p>
+          </div>
+          <div class="service-card">
+            <p class="text-lg font-bold text-[#ff1f00]">Digital Ads</p>
+            <p class="mt-1 text-sm text-[#7987a1]">PPC, social &amp; display</p>
+          </div>
+          <div class="service-card">
+            <p class="text-lg font-bold text-[#ff1f00]">SMS &amp; Voice</p>
+            <p class="mt-1 text-sm text-[#7987a1]">Targeted mobile campaigns</p>
+          </div>
+          <div class="service-card">
+            <p class="text-lg font-bold text-[#ff1f00]">Radio &amp; TV</p>
+            <p class="mt-1 text-sm text-[#7987a1]">Broadcast across Nigeria</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="form" class="bg-mysogi-light py-16 lg:py-20">
+        <div class="mx-auto max-w-6xl px-6">
+          <div class="form-card mx-auto max-w-lg">
+            <div class="form-card-header">
+              <h2 class="text-2xl font-bold text-white lg:text-[32px]">
                 Request Billboard Rates &amp; Advertising Packages
               </h2>
             </div>
-            <form id="lead-form" class="space-y-4 px-6 py-8">
-              <label class="block text-sm font-semibold">
+            <form id="lead-form" class="space-y-5 px-8 py-8 lg:px-10 lg:py-10">
+              <label class="block text-sm font-bold text-[#3b4863]">
                 Full Name *
                 <input
                   type="text"
                   name="name"
                   required
-                  class="mt-1 w-full rounded-lg border border-slate-300 px-4 py-3"
+                  placeholder="John Doe"
+                  class="form-input mt-2"
                 />
               </label>
-              <label class="block text-sm font-semibold">
+              <label class="block text-sm font-bold text-[#3b4863]">
                 Email Address *
                 <input
                   type="email"
                   name="email"
                   required
-                  class="mt-1 w-full rounded-lg border border-slate-300 px-4 py-3"
+                  placeholder="you@email.com"
+                  class="form-input mt-2"
                 />
               </label>
-              <label class="block text-sm font-semibold">
+              <label class="block text-sm font-bold text-[#3b4863]">
                 Phone Number *
                 <input
                   type="tel"
                   name="phone"
                   required
-                  class="mt-1 w-full rounded-lg border border-slate-300 px-4 py-3"
+                  placeholder="+234 812 088 9773"
+                  class="form-input mt-2"
                 />
               </label>
-              <button type="submit" class="btn-mysogi w-full">
+              <button type="submit" class="btn-mysogi w-full text-center">
                 Launch My Billboard Campaign
               </button>
             </form>
@@ -103,38 +148,83 @@
         </div>
       </section>
 
-      <section id="whatsapp" class="bg-mysogi-pink py-16">
-        <div class="mx-auto max-w-2xl px-6 text-center">
-          <h2 class="text-2xl font-bold text-black lg:text-3xl">
-            Speak With a Billboard &amp; OOH Advertising Expert
-          </h2>
-          <p class="mt-4 text-[#7987a1]">
-            Chat with Mysogi directly on WhatsApp for billboard pricing, outdoor advertising locations, digital
-            billboard placements, and PPC advertising campaign consultations.
-          </p>
-          <a href="https://wa.me/2348120889773" target="_blank" class="btn-whatsapp mt-6 inline-block">
-            Speak With an Ad Expert
-          </a>
+      <section id="whatsapp" class="bg-mysogi-pink py-16 lg:py-20">
+        <div class="mx-auto max-w-3xl px-6">
+          <div class="cta-card text-center">
+            <div class="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-[#25d366]/10">
+              <svg class="h-8 w-8 text-[#25d366]" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"
+                />
+                <path
+                  d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.75.75 0 00.918.918l4.458-1.495A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.013-1.378l-.358-.213-3.005 1.007 1.007-3.005-.213-.358A9.818 9.818 0 0112 2.182c5.422 0 9.818 4.396 9.818 9.818 0 5.422-4.396 9.818-9.818 9.818z"
+                />
+              </svg>
+            </div>
+            <h2 class="text-[28px] font-bold text-black lg:text-[32px]">
+              Speak With a Billboard &amp; OOH Advertising Expert
+            </h2>
+            <p class="mx-auto mt-4 max-w-xl text-base leading-relaxed text-[#7987a1] lg:text-lg">
+              Chat with Mysogi directly on WhatsApp for billboard pricing, outdoor advertising locations, digital
+              billboard placements, and PPC advertising campaign consultations.
+            </p>
+            <a href="https://wa.me/2348120889773" target="_blank" class="btn-whatsapp mt-8 inline-block">
+              Speak With an Ad Expert
+            </a>
+          </div>
         </div>
       </section>
 
-      <section id="call" class="bg-[#3b4863] py-16 text-center text-white">
-        <div class="mx-auto max-w-2xl px-6">
-          <h2 class="text-2xl font-bold lg:text-3xl">Call Our Advertising Team</h2>
-          <p class="mt-4 text-[#c5d0e0]">
+      <section id="call" class="bg-[#3b4863] py-16 lg:py-20">
+        <div class="mx-auto max-w-3xl px-6 text-center">
+          <h2 class="text-[28px] font-bold text-white lg:text-[32px]">Call Our Advertising Team</h2>
+          <p class="mx-auto mt-4 max-w-xl text-base leading-relaxed text-[#c5d0e0] lg:text-lg">
             Speak directly with our billboard advertising and digital marketing specialists to plan your next OOH
             campaign, paid search strategy, or nationwide outdoor media placement.
           </p>
-          <a href="tel:+2348120889773" class="mt-6 inline-block rounded-lg bg-white px-8 py-3 font-bold text-[#3b4863] no-underline">
+          <a href="tel:+2348120889773" class="btn-call mt-8 inline-block">
             Call Now
           </a>
-          <p class="mt-3 text-sm">+234 812 088 9773</p>
+          <p class="mt-4 text-sm font-semibold text-[#7987a1]">+234 812 088 9773</p>
         </div>
       </section>
     </main>
 
-    <footer class="border-t border-slate-200 py-6 text-center text-sm text-[#7987a1]">
-      <p>&copy; 2026 Mysogi. Billboard advertising across Nigeria.</p>
+    <footer class="site-footer">
+      <div class="mx-auto grid max-w-6xl gap-10 px-6 md:grid-cols-3">
+        <div>
+          <img
+            src="https://res.cloudinary.com/mysogi/image/upload/v1687133607/website/logo2_ltryod.png"
+            alt="Mysogi"
+            class="mb-4 h-8 w-auto"
+          />
+          <p class="leading-relaxed">
+            Mysogi Company Limited — digital marketing &amp; billboard advertising across Nigeria.
+          </p>
+        </div>
+        <div>
+          <p class="mb-3 font-bold text-[#3b4863]">Quick Links</p>
+          <ul class="footer-links">
+            <li><a href="https://mysogi.com.ng">Home</a></li>
+            <li><a href="https://mysogi.com.ng/create-campaign">Create a Campaign</a></li>
+            <li><a href="https://mysogi.com.ng/login">Login</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="mb-3 font-bold text-[#3b4863]">Contact</p>
+          <p class="leading-relaxed">
+            9, Adedoyin Ogungbe Crescent,<br />
+            Lekki Phase 1, Lagos, Nigeria.
+          </p>
+          <p class="mt-2">
+            <a href="tel:+2348120889773" class="footer-link">+234 812 088 9773</a>
+          </p>
+          <p>
+            <a href="mailto:info@mysogi.com.ng" class="footer-link">info@mysogi.com.ng</a>
+          </p>
+        </div>
+      </div>
+      <p class="mt-10 text-center text-xs">&copy; 2026 Mysogi. All rights reserved.</p>
     </footer>
 
     <script type="module" src="/src/main.ts"></script>
