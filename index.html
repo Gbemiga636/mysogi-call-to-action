@@ -25,28 +25,34 @@
         },
       }
     </script>
-    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body class="font-sans text-base text-[#3b4863] antialiased">
     <header class="sticky top-0 z-50 border-b border-slate-100 bg-white shadow-sm">
-      <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-3">
+      <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:px-6">
         <a href="https://mysogi.com.ng" class="shrink-0">
           <img
             src="https://res.cloudinary.com/mysogi/image/upload/v1687130798/website/logo_pwxnvp.svg"
             alt="Mysogi"
-            class="h-9 w-auto"
+            class="h-8 w-auto md:h-9"
           />
         </a>
-        <nav class="hidden items-center gap-8 text-sm font-semibold md:flex">
-          <a href="https://mysogi.com.ng" class="text-[#7987a1] no-underline hover:text-[#ff1f00]">Home</a>
-          <a href="#form" class="text-[#7987a1] no-underline hover:text-[#ff1f00]">Get Rates</a>
-          <a href="#whatsapp" class="text-[#7987a1] no-underline hover:text-[#ff1f00]">WhatsApp</a>
-          <a href="#call" class="text-[#7987a1] no-underline hover:text-[#ff1f00]">Call</a>
+        <button id="menu-btn" class="menu-btn" type="button" aria-label="Open menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="desktop-nav">
+          <a href="#form" class="nav-pill">Get Rates</a>
+          <a href="#whatsapp" class="nav-pill">WhatsApp</a>
+          <a href="#call" class="nav-pill">Call</a>
         </nav>
-        <a href="https://mysogi.com.ng/create-campaign" class="btn-mysogi hidden text-sm md:inline-block">
-          Get Started
-        </a>
       </div>
+      <nav id="mobile-menu" class="mobile-menu">
+        <a href="#form" class="nav-pill mobile-link">Get Rates</a>
+        <a href="#whatsapp" class="nav-pill mobile-link">WhatsApp</a>
+        <a href="#call" class="nav-pill mobile-link">Call</a>
+      </nav>
     </header>
 
     <main>
@@ -67,7 +73,7 @@
             </p>
             <div class="mt-8">
               <a href="#form" class="btn-mysogi-lg">
-                Start Your Billboard or Digital Advertising Campaign Today
+                Get Started
               </a>
             </div>
             <div class="mt-10 flex flex-wrap gap-6 text-sm font-semibold text-[#3b4863]">
@@ -87,7 +93,7 @@
           </div>
           <div class="scroll-animate fade-right delay-2 flex justify-center">
             <img
-              src="/billboard.png"
+              src="./billboard.png"
               alt="Billboard advertising"
               class="hero-image max-h-[400px] w-full max-w-lg object-contain"
             />
@@ -242,6 +248,6 @@
       <p class="mt-10 text-center text-xs">&copy; 2026 Mysogi. All rights reserved.</p>
     </footer>
 
-    <script type="module" src="/src/main.ts"></script>
+    <script src="./main.js"></script>
   </body>
 </html>
