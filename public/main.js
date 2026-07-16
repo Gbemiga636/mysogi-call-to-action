@@ -27,6 +27,17 @@ if (form) {
   })
 }
 
+// Google Ads phone call conversion
+document.querySelectorAll('a[href^="tel:"]').forEach(function (phoneLink) {
+  phoneLink.addEventListener('click', function () {
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'conversion', {
+        send_to: 'AW-10978179511/dDNrCKiZ7YIcELfz5vIo',
+      })
+    }
+  })
+})
+
 // Scroll animations
 const scrollElements = document.querySelectorAll('.scroll-animate')
 
